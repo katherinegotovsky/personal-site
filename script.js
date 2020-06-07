@@ -20,9 +20,10 @@
 
 ScrollReveal().reveal('#first', { delay: 200, duration: 2000 });
 ScrollReveal().reveal('#second', { delay: 400, duration: 2000 });
-ScrollReveal().reveal('#about #description h2', { delay: 200, duration: 2000 });
-ScrollReveal().reveal('#about #description p', { delay: 400, duration: 2000 });
-ScrollReveal().reveal('#work .subheading', { delay: 200, duration: 2000 });
+ScrollReveal().reveal('#reveal1', { delay: 200, duration: 2000 });
+ScrollReveal().reveal('#reveal2', { delay: 400, duration: 2000 });
+ScrollReveal().reveal('#reveal3', { delay: 600, duration: 2000 });
+ScrollReveal().reveal('#reveal4', { delay: 800, duration: 2000 });
 ScrollReveal().reveal('#work .container', { delay: 400, duration: 2000 });
 ScrollReveal().reveal('#projects .subheading', { delay: 200, duration: 2000 });
 ScrollReveal().reveal('#projects .container', { delay: 400, duration: 2000 });
