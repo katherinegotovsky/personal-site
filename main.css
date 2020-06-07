@@ -118,12 +118,17 @@ h4 {
 	font-size: 1.25em;
 	margin-bottom: 0;
 	margin-top: 0.5em;
+	color: #CDCDCD;
 	/*	color: rgb(255, 64, 86);*/
 }
 
 p {
 	font-size: 1.5em;
 	line-height: 1.15;
+}
+
+a {
+	color: #696969;
 }
 
 .subheading {
@@ -337,6 +342,7 @@ section div img{width:50%;right:-2%}
 	position: relative;
 	top: 2rem;
 	max-height: 40vh;
+	max-width: 40%;
 	width: auto;
 	padding-left: 10vh;
 }
@@ -387,10 +393,18 @@ body .button:hover {
 }
 	
 
-@media screen and (max-width: 61.625em) {
-	.subscribe {
-		padding: 7.5em 3.5em; } }
+@media (max-width: 1000px) {
+	.project {
+		flex-direction: column;
+	}
 
+	.project-image {
+		max-width: 100%;
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 61.625em) {
 
 		/*Media Queries*/
 
