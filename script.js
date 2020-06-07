@@ -1,3 +1,4 @@
+
 // $(document).ready(function(){
 //         $('body').fadeIn(1000);
 //         var window_height = $(window).height();
@@ -20,8 +21,10 @@
 
 ScrollReveal().reveal('#first', { delay: 200, duration: 2000 });
 ScrollReveal().reveal('#second', { delay: 400, duration: 2000 });
-ScrollReveal().reveal('#about #description h2', { delay: 200, duration: 2000 });
-ScrollReveal().reveal('#about #description p', { delay: 400, duration: 2000 });
+ScrollReveal().reveal('#reveal1', { delay: 200, duration: 2000 });
+ScrollReveal().reveal('#reveal2', { delay: 400, duration: 2000 });
+ScrollReveal().reveal('#reveal3', { delay: 600, duration: 2000 });
+ScrollReveal().reveal('#reveal4', { delay: 800, duration: 2000 });
 ScrollReveal().reveal('#work .subheading', { delay: 200, duration: 2000 });
 ScrollReveal().reveal('#work .container', { delay: 400, duration: 2000 });
 ScrollReveal().reveal('#projects .subheading', { delay: 200, duration: 2000 });
@@ -109,26 +112,26 @@ $(document).ready(function(){
 });
 
 //scrolling
-$(document).ready(function(){
-  $('#nav').onePageNav({
-    currentClass: 'current',
-    changeHash: false,
-    scrollSpeed: 1000,
-    scrollThreshold: 0.5,
-    filter: '',
-    easing: 'swing',
-    begin: function() {
-       //Hack so you can click other menu items after the initial click
-       $('body').append('<div id="device-dummy" style="height: 1px;"></div>');
-     },
-     end: function() {
-        //I get fired when the animation is ending
-        $('#device-dummy').remove();
-      },
-      scrollChange: function($currentListItem) {
-        //I get fired when you enter a section and I pass the list item of the section
-      }
-    });
-});
+// $(document).ready(function(){
+//   $('#nav').onePageNav({
+//     currentClass: 'current',
+//     changeHash: false,
+//     scrollSpeed: 1000,
+//     scrollThreshold: 0.5,
+//     filter: '',
+//     easing: 'swing',
+//     begin: function() {
+//        //Hack so you can click other menu items after the initial click
+//        $('body').append('<div id="device-dummy" style="height: 1px;"></div>');
+//      },
+//      end: function() {
+//         //I get fired when the animation is ending
+//         $('#device-dummy').remove();
+//       },
+//       scrollChange: function($currentListItem) {
+//         //I get fired when you enter a section and I pass the list item of the section
+//       }
+//     });
+// });
 
 

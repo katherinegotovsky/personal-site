@@ -23,6 +23,7 @@ html {
 	background-size: 2px auto, 2px auto, 2px auto, 2px auto, 2px auto, 100% auto;
 	background-attachment: fixed;
 	display: block;
+	scroll-behavior: smooth;
 }
 
 
@@ -75,7 +76,7 @@ section {
 	flex
 	}*/
 
-	.container {
+.container {
 /*	max-width: 75em;
 margin: 0 auto;*/
 }
@@ -118,12 +119,17 @@ h4 {
 	font-size: 1.25em;
 	margin-bottom: 0;
 	margin-top: 0.5em;
+	color: #CDCDCD;
 	/*	color: rgb(255, 64, 86);*/
 }
 
 p {
-	font-size: 1.5em;
-	line-height: 1.15;
+	font-size: 1.25em;
+	line-height: 1.2;
+}
+
+a {
+	color: #696969;
 }
 
 .subheading {
@@ -247,7 +253,7 @@ p {
 
 }
 
-#date1, #date2, #date3, #date4 {
+#date1, #date2, #date3, #date4, #date5 {
 	color: rgb(255, 64, 86);
 	font-weight: bolder;
 }
@@ -276,6 +282,9 @@ p {
 	padding-bottom: 15vh;
 	padding: 5vh;
 	margin-top: 5vh;
+	color: #696969;
+	min-height: 50vh;
+
 }
 
 .ml11 {
@@ -313,8 +322,7 @@ p {
 
 #projects div a{
 	all:unset;
-	width:45%
-	display: flex;
+	width:45%;
 	flex: 1 1 auto;
 }
 
@@ -337,10 +345,16 @@ section div img{width:50%;right:-2%}
 	position: relative;
 	top: 2rem;
 	max-height: 40vh;
+	max-width: 50%;
 	width: auto;
 	padding-left: 10vh;
+	transition: transform 0.5s;
 }
 
+/*.project-image:hover {
+	transform: rotateY(-10deg) rotateX(10deg) rotateZ(1deg) scale(1);
+}
+*/
 body .button {
 	transition:.3s cubic-bezier(.4,0,.2,1);
 	border-radius:0;
@@ -354,13 +368,14 @@ body .button {
 }
 
 body .button:hover {
-	color:rgb(255, 64, 86);
-	background-color:#000;
-	border-color:transparent 
+	color:white;
+	background-color: rgb(255, 64, 86)
+	border-color:white; 
 } 
 
 .subscribe {
 	margin: 12.5em 0 3em 0;
+	margin-top: 0;
 	padding: 7.5em 0;
 	text-align: center;
 	background: #262626;
