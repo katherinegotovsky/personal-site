@@ -281,6 +281,7 @@ a {
 	padding-bottom: 15vh;
 	padding: 5vh;
 	margin-top: 5vh;
+
 }
 
 .ml11 {
@@ -318,9 +319,6 @@ a {
 
 #projects div a{
 	all:unset;
-	width:45%
-	display: flex;
-	flex: 1 1 auto;
 }
 
 section div a h2 {
@@ -332,6 +330,7 @@ section div a h3 {
 }
 
 #projects div a:hover{cursor:pointer}
+
 
 section div img{width:50%;right:-2%}
 
@@ -345,6 +344,7 @@ section div img{width:50%;right:-2%}
 	max-width: 40%;
 	width: auto;
 	padding-left: 10vh;
+	transition: transform 0.5s;
 }
 
 body .button {
