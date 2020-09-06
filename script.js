@@ -1,23 +1,3 @@
-// $(document).ready(function(){
-//         $('body').fadeIn(1000);
-//         var window_height = $(window).height();
-//         $(window).scroll(function() {
-//           var scrollMiddle = $(window).scrollTop() + window_height/2;
-//           $('section').each(function(e) {
-//             elTop = $(this).offset().top;
-//             elBtm = elTop + $(this).height();
-//             if (elTop < scrollMiddle && elBtm > scrollMiddle - 300) {
-//               $(this).addClass(this.id + '_hover');
-//               $('#' + this.id + ' img').css('transform', 'rotateY(-10deg) rotateX(10deg) rotateZ(1deg) scale(1)');
-//             } else {
-//               $(this).removeClass(this.id + '_hover');
-//               $('#' + this.id + ' img').css('transform', 'rotateY(0) rotateX(0) rotateZ(0) scale(1)');
-//             }
-//           });
-//         });
-//       });
-
-
 ScrollReveal().reveal('#first', { delay: 200, duration: 2000 });
 ScrollReveal().reveal('#second', { delay: 400, duration: 2000 });
 ScrollReveal().reveal('#reveal1', { delay: 200, duration: 2000 });
@@ -110,26 +90,83 @@ $(document).ready(function(){
 });
 
 //scrolling
-$(document).ready(function(){
-  $('#nav').onePageNav({
-    currentClass: 'current',
-    changeHash: false,
-    scrollSpeed: 1000,
-    scrollThreshold: 0.5,
-    filter: '',
-    easing: 'swing',
-    begin: function() {
-       //Hack so you can click other menu items after the initial click
-       $('body').append('<div id="device-dummy" style="height: 1px;"></div>');
-     },
-     end: function() {
-        //I get fired when the animation is ending
-        $('#device-dummy').remove();
-      },
-      scrollChange: function($currentListItem) {
-        //I get fired when you enter a section and I pass the list item of the section
-      }
-    });
+// $(document).ready(function(){
+//   $('#nav').onePageNav({
+//     currentClass: 'current',
+//     changeHash: false,
+//     scrollSpeed: 1000,
+//     scrollThreshold: 0.5,
+//     filter: '',
+//     easing: 'swing',
+//     begin: function() {
+//        //Hack so you can click other menu items after the initial click
+//        $('body').append('<div id="device-dummy" style="height: 1px;"></div>');
+//      },
+//      end: function() {
+//         //I get fired when the animation is ending
+//         $('#device-dummy').remove();
+//       },
+//       scrollChange: function($currentListItem) {
+//         //I get fired when you enter a section and I pass the list item of the section
+//       }
+//     });
+// });
+
+// navigation
+$('#intro').addClass("active");
+
+//Smooth scrolling
+
+$("#intro").click(function () {
+  $('html, body').animate({
+    scrollTop: $("#one").offset().top - 66
+  }, 1000);
+  return false;
 });
+
+// $("#sec-2").click(function () {
+//   $('html, body').animate({
+//     scrollTop: $("#two").offset().top - 112
+//   }, 1000);
+//   return false;
+// });
+
+// $("#sec-3").click(function () {
+//   $(' html,body').animate({
+//     scrollTop: $("#three").offset().top - 112
+//   }, 1000);
+//   return false;
+// });
+
+// $("#sec-4").click(function () {
+//   $(this).addClass("active");
+//   $('html,body ').animate({
+//     scrollTop: $("#four").offset().top - 112
+//   }, 1000);
+//   return false;
+// });
+
+// $('#two').waypoint(function() {
+      
+//   $(".container ul li").children().removeClass("active");
+//   $("#sec-2").addClass("active");
+  
+// }, { offset: 101 });
+
+
+// $('#three').waypoint(function() {
+//   $(".container ul li").children().removeClass("active");
+//   $("#sec-3").addClass("active");
+// }, { offset: 101 });
+
+// $('#four').waypoint(function() {
+//   $(".container ul li").children().removeClass("active");
+//   $("#sec-4").addClass("active");
+// }, { offset: 101 });
+
+$('#one').waypoint(function() {
+  $(".container ul li").children().removeClass("active");
+  $("#intro").addClass("active");
+}, { offset: 0 });
 
 
