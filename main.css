@@ -23,6 +23,8 @@ html {
 	background-size: 2px auto, 2px auto, 2px auto, 2px auto, 2px auto, 100% auto;
 	background-attachment: fixed;
 	display: block;
+	scroll-behavior: smooth;
+
 }
 
 
