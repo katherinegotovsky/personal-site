@@ -24,10 +24,7 @@ html {
 	background-attachment: fixed;
 	display: block;
 	scroll-behavior: smooth;
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 }
 
 
@@ -290,11 +287,8 @@ a {
 	padding-bottom: 15vh;
 	padding: 5vh;
 	margin-top: 5vh;
-<<<<<<< HEAD
-=======
 	color: #696969;
 	min-height: 50vh;
->>>>>>> master
 
 }
 
@@ -333,11 +327,8 @@ a {
 
 #projects div a{
 	all:unset;
-<<<<<<< HEAD
-=======
 	width:45%;
 	flex: 1 1 auto;
->>>>>>> master
 }
 
 section div a h2 {
@@ -360,11 +351,8 @@ section div img{width:50%;right:-2%}
 	position: relative;
 	top: 2rem;
 	max-height: 40vh;
-<<<<<<< HEAD
 	max-width: 40%;
-=======
 	max-width: 50%;
->>>>>>> master
 	width: auto;
 	padding-left: 10vh;
 	transition: transform 0.5s;
