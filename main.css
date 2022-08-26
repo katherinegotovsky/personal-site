@@ -265,9 +265,6 @@ a {
 
 .timeline-event-thumbnail {
 
-	color: rgb(255, 64, 86);
-	font-weight: bolder;
-	
 	-moz-transition: box-shadow 0.5s ease-in 0.1s;
 	-o-transition: box-shadow 0.5s ease-in 0.1s;
 	-webkit-transition: box-shadow 0.5s ease-in;
